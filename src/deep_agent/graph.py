@@ -4,7 +4,12 @@ from langgraph.constants import END, START
 from langgraph.graph import MessagesState, StateGraph
 
 from deep_agent.context import CtripContext
-from deep_agent.ctrip_agent import supervisor_agent, research_agent, flight_agent, car_agent, hotel_agent, trip_agent
+from deep_agent.agents.supervisor import supervisor_agent
+from deep_agent.agents.flight_agent import flight_agent
+from deep_agent.agents.hotel_agent import hotel_agent
+from deep_agent.agents.car_rent_agent import car_agent
+from deep_agent.agents.trip_agent import trip_agent
+from deep_agent.agents.research_agent import research_agent
 from deep_agent.tools.flights_tools import query_user_flight_information
 
 # 内存中存储
