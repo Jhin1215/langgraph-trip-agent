@@ -9,10 +9,14 @@ deepseek_v1 = init_chat_model(
 )
 
 qwen36p = init_chat_model(
-    model='qwen3.6-plus',
+    # qwen3.6plus没有额度了
+    # model='qwen3.6-plus',
+    model='qwen3-32b',
     model_provider='openai',
     base_url=QWEN_BASE_URL,
     api_key=QWEN_API_KEY,
+    # qwen3-32b 需要把这个关掉
+    extra_body={"enable_thinking": False},
 )
 
 zhipuai_client = ZhipuAI(api_key=ZHIPU_API_KEY)

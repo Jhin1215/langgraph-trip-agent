@@ -1,4 +1,4 @@
-from langchain.agents.middleware import dynamic_prompt, ModelRequest
+from langchain.agents.middleware import dynamic_prompt, ModelRequest, HumanInTheLoopMiddleware
 
 from deep_agent.agents.common import get_context_content, format_time
 from deep_agent.context import CtripContext
@@ -50,7 +50,9 @@ trip_agent = create_agent(
     model=qwen36p,
     tools=trip_safe_tools + trip_sensitive_tools,
     system_prompt=TRIP_AGENT_PROMPT,
-    middleware=[trip_rental_dynamic_prompt, ],
+    middleware=[
+        trip_rental_dynamic_prompt,
+    ],
     context_schema=CtripContext,
     name='trip_booking_agent',
 )
