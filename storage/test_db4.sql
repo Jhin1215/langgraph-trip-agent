@@ -12,6 +12,8 @@
  File Encoding         : 65001
 
  Date: 03/06/2025 14:15:46
+
+ 生成用户数据的 SQL
 */
 CREATE DATABASE test_db4 CHARACTER SET utf8mb4;
 USE test_db4;

@@ -1,4 +1,4 @@
-# 🤖 Xiec Assistant 智能体说明文档（中文）
+# 🤖 LangGraph Trip Agent 智能体说明文档（中文）
 
 > 本文档用于说明项目中各个 Agent 的职责边界、输入输出、可调用工具与协作关系。  
 > 当前系统基于 **LangChain v1 + LangGraph** 构建，整体采用 **Supervisor + Specialist Agents** 多智能体编排模式。  

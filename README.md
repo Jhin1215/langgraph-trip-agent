@@ -1,4 +1,4 @@
-# Xiec Assistant
+# LangGraph Trip Agent
 
 > 1. 基于 **LangChain v1 + LangGraph** 构建的多智能体出行助手。  
 > 2. 项目核心目标并非实现一个简单的对话机器人，而是完成一次面向工程实践的架构迁移：**从旧版“单智能体挂全量工具”重构为新版“Supervisor + Specialist Agents + 状态驱动 Handoff + HITL”多智能体系统。**
@@ -6,7 +6,7 @@
 
 ## 1. 项目简介
 
-`XiecAssistant` 是一个面向出行场景的多智能体系统，围绕以下五类任务进行协作处理：
+`LangGraph Trip Agent` 是一个面向出行场景的多智能体系统，围绕以下五类任务进行协作处理：
 
 - 航班查询、改签、退票、政策咨询
 - 酒店查询、预订、订单修改
